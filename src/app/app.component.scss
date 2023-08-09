@@ -1,0 +1,63 @@
+.chatscreen {
+    height: 80%;
+    width: 100%;
+    .msg {
+        word-wrap: break-word;
+        background-color: rgb(20, 20, 252);
+        border-radius: 20px;
+        width: 70%;
+        height: 50px;
+        color: white;
+        text-align: center;
+    }
+    .chat {
+        padding-left: 50px;
+
+    }
+
+    
+
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+
+    .type {
+        margin-top: 15px;
+        width: 100%;
+        
+    }
+    .btn {
+        margin-top: 15px;
+        width: 100px;
+    }
+
+}
+
+.joinGrp {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: antiquewhite;
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    background-color: antiquewhite;
+    input {
+        width: 70%;
+        height: 30%;
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+    button {
+        height: 30%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}

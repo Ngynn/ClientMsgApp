@@ -1,0 +1,27 @@
+
+<div class="joinGrp">
+  <div class="join">
+    <input class="type" type="text" [(ngModel)]="roomId" placeholder="Enter your roomId..." >
+    <input class="type" type="text" [(ngModel)]="userName" placeholder="Enter your name..." >
+    <button class="btn" (click)="joinRoom(roomId)">Join in</button>
+  </div>
+</div>
+
+
+<div class="chatscreen">
+  <div class="chat" *ngFor="let msg of messages">
+    <p class="name">Room: {{msg.roomId}}</p>
+    <p class="name">From: {{msg.from}}</p>
+    <div class="msg">
+      <p >          Message: {{msg.msg}}</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="chatbox">
+  <input type="text" [(ngModel)]="newMessage" placeholder="Enter messages" >
+
+  <button (click)="sendMessage(newMessage)">Send</button>
+</div>
